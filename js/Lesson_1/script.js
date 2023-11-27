@@ -67,3 +67,63 @@
 // Напиши скрипт, який виводить у консолі заокруглені вгору/вниз і т.д. значення змінної
 // value. Використовуй метолди Math.floor(), Math.ceil(), та Math.round(). Перевір що буде в консолі при значеннях 27.3 та 27.9.
 
+// const value = 27.5;
+// const value = 27.3;
+
+// console.log(Math.ceil(value)); //округлення більшого значення
+// console.log(Math.floor(value)); // округлить в меншу сторону
+// console.log(Math.round(value)); // округлить по матиматичному принципу
+
+
+// Example 5 - шаблонні рядки
+
+
+// const value = 10;
+// const value_2 = '15';
+// const result = value + Number(value_2);
+
+// console.log(result);
+
+
+
+// const companyName = 'Cyberdyne Systems';
+// const repairBots = 150;
+// const defenceBots = 50;
+// // const message = companyName + ' has ' + (repairBots + defenceBots) + ' bots in stock';
+// const message = `${companyName} has ${repairBots + defenceBots} bots in stock`;
+// console.log(message); // "Cyberdyne Systems has 200 bots in stock"
+
+
+
+// Example 6 - Метод рядків та чейнінг
+// Напиши скрипт, який розраховує індекс маси тіла людини. Для цього необхідно розділити  вагу
+// в кілограмах на квадрат висоти людини у метрах
+
+// Вага та висота зберігається у змінних weight та height, але не як числа, а в вигляді рядків
+// (спеціально для завдання). Не цілі числа можуть бути задані у вигляді 24.7 або 24,7, тобто як
+// роздільник дробової частини може бути кома.
+
+// Індекс маси тіла необхідно округлити до однієї цифри після коми;
+
+// let weight = '88,3';
+// let height = '1.75';
+
+// weight = Number(weight.replace(',', '.'));
+
+// height = Number(height); // або
+
+// // height = +height;
+
+// // weight = Number(weight);
+
+// console.log(typeof height);
+// // console.log(weight);
+
+// // const bmi = weight / Math.pow(height, 2); // або
+
+// const bmi = Number((weight / height ** 2).toFixed(1));
+// console.log(bmi);   // 28.8
+
+
+
+// Example 7 
